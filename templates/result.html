@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #8fbff5, #dbeafe);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 30px;
+        }
+
+        .result.positive {
+            color: #dc3545;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🩺 Heart Disease Prediction Result</h2>
+        <p class="result {{ 'positive' if prediction.startswith('Positive') else '' }}">
+            {{ prediction }}
+        </p>
+        <a href="/">🔙 Back to Home</a>
+    </div>
+</body>
+</html>

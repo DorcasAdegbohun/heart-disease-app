@@ -1,0 +1,28 @@
+Heart Disease Prediction Web App
+By Dorcas Enechojo Adegbohun
+Date: July 7, 2025
+
+Description:
+This project is a machine learning-powered web application that predicts the likelihood of heart disease based on user-provided clinical data. It uses a trained Support Vector Classifier (SVC) model and is built with Python and Flask.
+
+How to Run the App:
+1. Make sure Python is installed on your system.
+2. Open a terminal or command prompt.
+3. Navigate to this project folder.
+4. (Optional) Create and activate a virtual environment.
+5. Install dependencies:
+   pip install -r requirements.txt
+6. Run the Flask app:
+   python app.py
+7. Open your browser and go to:
+   http://127.0.0.1:5000/
+
+Included Files:
+- app.py → Main Flask application
+- heart_disease_model.pkl → Trained machine learning model
+- heart.csv → Dataset used for training
+- requirements.txt → List of Python dependencies
+- templates/ → Folder containing HTML files (index.html and result.html)
+
+Note:
+This app is for educational purposes and not intended for clinical use.
